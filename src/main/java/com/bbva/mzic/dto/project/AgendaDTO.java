@@ -17,7 +17,7 @@ public class AgendaDTO implements Serializable  {
 	private String letter;
 	private String reference;
 	private int secuence;
-	private List<Banks> Banks;
+	private ArraList<Banks> banks;
 	private Costumer costumer;
 
 	//get and Set
@@ -36,27 +36,13 @@ public class AgendaDTO implements Serializable  {
 		return this.reference
 	}
 
-	public String getsecuence(){
+	public int getsecuence(){
 		return 
 	}
 	public void setsecuence(final int secuence){
 		return this.secuence
 	}
 	
-	public String get(){
-		return 
-	}
-	public void set(final String ){
-		return this.
-	}
-
-	public String get(){
-		return 
-	}
-	public void set(final String ){
-		return this.
-	}
-
 
 	/**
 	 * Indicates whether some other object is "equal to" this one.

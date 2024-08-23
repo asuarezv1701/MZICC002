@@ -17,7 +17,7 @@ public class Costumer implements Serializable {
     public String getid(){
 		return id
 	}
-	public void set(final int id){
+	public void setid(final int id){
 		return this.id
 	}
 
