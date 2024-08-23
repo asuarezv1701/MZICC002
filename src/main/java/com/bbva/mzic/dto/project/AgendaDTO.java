@@ -14,43 +14,49 @@ public class AgendaDTO implements Serializable  {
 
 	/* Attributes section for the DTO */
 
-	/**
-	 * The name attribute
-	 */
-	private String name;
+	private String letter;
+	private String reference;
+	private int secuence;
+	private List<Banks> Banks;
+	private Costumer costumer;
 
-	/**
-	 * The surname attribute
-	 */
-	private String surname;
+	//get and Set
 
-	/**
-	 * Get the name attribute
-	 */
-	public String getName() {
-		return this.name;
+	public String getletter(){
+		return letter
+	}
+	public void setletter(final String letter){
+		return this.letter
 	}
 
-	/**
-	 * Set the name attribute
-	 */
-	public void setName(final String name) {
-		this.name = name;
+	public String getreference(){
+		return reference
+	}
+	public void setreference(final String reference){
+		return this.reference
 	}
 
-	/**
-	 * Get the surname attribute
-	 */
-	public String getSurname() {
-		return this.surname;
+	public String getsecuence(){
+		return 
+	}
+	public void setsecuence(final int secuence){
+		return this.secuence
+	}
+	
+	public String get(){
+		return 
+	}
+	public void set(final String ){
+		return this.
 	}
 
-	/**
-	 * Set the surname attribute
-	 */
-	public void setSurname(final String surname) {
-		this.surname = surname;
+	public String get(){
+		return 
 	}
+	public void set(final String ){
+		return this.
+	}
+
 
 	/**
 	 * Indicates whether some other object is "equal to" this one.
@@ -64,8 +70,9 @@ public class AgendaDTO implements Serializable  {
 		}
 		final AgendaDTO rhs = (AgendaDTO) obj;
 		return new EqualsBuilder().appendSuper(super.equals(obj))
-					.append(name, rhs.name)
-					.append(surname, rhs.surname)
+					.append(letter, rhs.letter)
+					.append(reference, rhs.reference)
+					.append(secuence, rhs.secuence)
 					.isEquals();
 	}
 
@@ -75,8 +82,9 @@ public class AgendaDTO implements Serializable  {
 	@Override
 	public int hashCode() {
 		return new HashCodeBuilder()
-			.append(this.name)
-			.append(this.surname)
+			.append(this.letter)
+			.append(this.reference)
+			.append(this.secuence)
 			.toHashCode();
 	}
 
@@ -87,8 +95,9 @@ public class AgendaDTO implements Serializable  {
 	@Override
 	public String toString() {
 		return new ToStringBuilder(this)
-			.append("name", name)
-			.append("surname", surname)
+			.append("letter", letter)
+			.append("reference", reference)
+			.append("secuence", secuence)
 			.toString();
 	}
 }
